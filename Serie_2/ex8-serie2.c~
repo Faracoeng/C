@@ -1,0 +1,12 @@
+/*Implemente um algoritmo em C que conta a ocorrência de cada letra (incluindo números de 0 a 9) dada uma frase. 
+Deve ignorar se a letra foi digitada em maiúscula ou minúscula (portando somar junto). 
+Limite 100 caracteres. 
+*/
+#include <stdio.h>
+
+int main()
+{
+	char frase[100]	
+	printf("Digite uma frase com até 100 caracteres:\n");
+	scanf("%s",&frase[100]);
+}

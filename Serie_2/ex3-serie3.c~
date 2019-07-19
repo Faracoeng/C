@@ -1,0 +1,29 @@
+/*Modificar o exercício anterior para computar a quantidade de números do vetor que estão acima da média.  */
+
+#include <stdio.h>
+
+int main()
+{
+	float n[10],media;
+	int i,qtd;
+	i=1;
+	media=0;
+	qtd=0;
+
+	while(i<=10)
+	{
+		printf("Digite o %dº número real:",i);
+		scanf("%f",&n[i]);
+		media += n[i]/10;
+		i++;	
+	}
+	printf("A média é %f\n",media);
+	for(i=1;i<=10;i++)
+	{
+		if(n[i]>media)
+		{
+			qtd++;
+		}	
+	}
+	printf("A quantidade de números acima da média é:%d\n",qtd);
+}

@@ -1,0 +1,16 @@
+/*Implementar um programa em C para ler 10 números reais (float) para um vetor. Usar o comando while. */
+
+#include <stdio.h>
+
+int main()
+{
+	float n[10];
+	int i;
+	i=0;
+	while(i<=9)
+	{
+		printf("Digite o %dº número real:",i);
+		scanf("%f",&n[i]);
+		i++;	
+	}
+}

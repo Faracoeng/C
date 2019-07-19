@@ -1,0 +1,32 @@
+/*Implemente um algoritmo em C que obtém um número do usuário e utilizando laço para verifica se um número primo. 
+Valide seu algoritmo comparando com a lista de primos Lista de números primos */ 
+
+#include <stdio.h>
+
+int main()
+{
+    int numero,primo,contador,divisores;
+    contador=1;
+    divisores=0;
+    
+    printf("Digite um número para verificar se é primo:\n");
+    scanf("%d",&numero);
+    
+   while(numero>=contador)
+   {
+      if((numero%contador)==0)
+      {
+          divisores++;
+      }
+      
+      contador++;
+   }
+   if(divisores==2)
+   {
+         printf("O número é primo!");
+   }
+   else
+   {
+          printf("O número NÂO é primo");
+   }
+}

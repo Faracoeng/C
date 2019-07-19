@@ -1,0 +1,37 @@
+/*Melhore o programa de cálculo de delta, e calcule as raízes de uma equação de segundo grau.
+Faça testes para saber se há duas raízes reais (delta > 0), apenas uma (delta = 0) ou não há raízes reais (delta < 0). 
+Usar a função sqrtf ou sqrt de <math.h> (utilizando funções de math.h talvez seja necessário adicionar a flag "-lm" na compilação).  */ 
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float a,b,c,delta,x1,x2;
+    
+    printf("Entre com o coeficiente a:");
+    scanf("%f",&a);
+    printf("Entre com o coeficiente b:");
+    scanf("%f",&b);
+    printf("Entre com o coeficiente c:");
+    scanf("%f",&c);
+    
+    delta=(b*b)-4*a*c;
+    
+    if(delta>0)
+    {
+        x1=(-b+sqrt(delta))/(2*a);
+        x2=(-b-sqrt(delta))/(2*a);
+        printf("As Raízes da equação são x1=%.2f e x2=%.2f",x1,x2);
+    }
+    else if (delta==0)
+    {
+        x1=(-b)/(2*a);
+        x2=(-b)/(2*a);
+        printf("As Raízes da equação são x1=%.2f e x2=%.2f",x1,x2);
+    }
+    else
+    {
+        printf("Não há raízes reais!");
+    }
+}
